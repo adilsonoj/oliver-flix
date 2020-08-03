@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const VideoCardContainer = styled.a`
   border: 2px solid;
@@ -19,12 +19,11 @@ export const VideoCardContainer = styled.a`
   align-items: flex-end;
   padding: 16px;
 
-  transition: opacity .3s;
+  transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
   &:hover,
   &:focus {
-    opacity: .5;
-  }
-  
+    transform: scale(1.5);
+
   &:not(:first-child) {
     margin-left: 20px;
   }
