@@ -1,8 +1,10 @@
 import React from "react";
 import BannerMain from "./components/BannerMain";
-import Carousel from "./components/Carousel";
-import dadosIniciais from "./data/dados_iniciais.json";
+
 import PageDefault from "./pages/PageDefault";
+
+import CategoriaList from "./components/CategoriaList";
+import dadosIniciais from "./data/dados_iniciais.json";
 
 function Home() {
   return (
@@ -14,9 +16,7 @@ function Home() {
           videosDescription={"O que é Front-end"}
         />
 
-        {dadosIniciais.categorias.map((categoria) => {
-          return <Carousel ignoreFirstVideo category={categoria} />;
-        })}
+        <CategoriaList />
       </PageDefault>
     </div>
   );
